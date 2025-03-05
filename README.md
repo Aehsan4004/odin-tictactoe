@@ -1,6 +1,3 @@
-# odin-tictactoe
-TIC-TAC-TOE chapter of ODIN
-
 # Tic-Tac-Toe (Command Line Game)
 
 ## Overview
@@ -30,7 +27,7 @@ This is a simple command-line Tic-Tac-Toe game written in Ruby where two human p
 
 #### Methods:
 - `display`: Prints the board.
-- `place_marker(row, col, marker)`: Places a marker on the board if the spot is available.
+- `place_marker(row, col, marker)`: Places a marker on the board if the spot is available (now using 1-based indexing).
 - `winner?(marker)`: Checks if a player has won.
 - `full?`: Checks if the board is full.
 
@@ -40,7 +37,7 @@ This is a simple command-line Tic-Tac-Toe game written in Ruby where two human p
 - `@marker`: The symbol ('X' or 'O').
 
 #### Methods:
-- `get_move`: Asks the player for a move and validates input.
+- `get_move`: Asks the player for a move and validates input (now using 1-based indexing).
 
 ### Game Class:
 #### Instance Variables:
@@ -56,7 +53,7 @@ This is a simple command-line Tic-Tac-Toe game written in Ruby where two human p
 ## Game Flow:
 1. Initialize the board and players.
 2. Display the board.
-3. Players take turns making moves.
+3. Players take turns making moves (now entering row/column numbers between 1 and 3).
 4. After each move, check for a winner or draw.
 5. Announce results and end the game.
 
@@ -69,5 +66,3 @@ This is a simple command-line Tic-Tac-Toe game written in Ruby where two human p
 - Add AI for single-player mode.
 - Implement a scoreboard.
 - Allow players to choose their symbols.
-
-
